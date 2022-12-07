@@ -236,7 +236,7 @@ if __name__ == "__main__":
         # center = img_ori.shapes
         tt+=1
         start = timeit.default_timer()
-        box_img, box_image_no = detect_box(model, device, img_ori,imgsz=[640,640],conf_thres=0.2, iou_thres = 0.3)
+        box_img, box_image_no = detect_box(model, device, img_ori,imgsz=[768,768],conf_thres=0.2, iou_thres = 0.3)
         # print("box_image_no", box_image_no)
         img_output = folder_output + path
         stop = timeit.default_timer()
